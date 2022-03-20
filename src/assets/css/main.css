@@ -1,0 +1,181 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    font-family: 'Graphik LCG', Arial, sans-serif;
+    font-size: 16px;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.segment {
+    max-width: 1600px;
+    max-height: 100vh;
+
+    padding: 50px 60px 190px 60px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.segment__header {
+    padding-bottom: 25px;
+}
+
+.segment__title {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__list {
+    width: 320px;
+    margin-bottom: 32px;
+}
+
+.header__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header__stat {
+    font-weight: 600;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 411px;
+}
+
+.settings p {
+    margin-right: 10px;
+
+    font-size: 14px;
+    color: #1E2022;
+}
+
+.settings__main {
+    display: flex;
+    align-items: center;
+
+    width: 275px;
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 15px;
+    margin-left: 12px;
+
+    border-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    background: #F7F9FC;
+}
+
+.settings__axis {
+    width: 123px;
+    height: 40px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    color: #1E2022;
+
+    background-color: #F7F9FC;
+}
+
+.graph-wrapper {
+    position: relative;
+}
+
+.segment__graph {
+    position: relative;
+
+    max-width: 1600px;
+    height: 608px;
+    overflow: hidden;
+}
+
+.graph-axis {
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.axis-y {
+    top: 40px;
+    left: -20px;
+
+    flex-direction: column-reverse;
+
+    height: 85%;
+}
+
+.axis-x {
+    right: 10px;
+    bottom: -26px;
+
+    width: 89%;
+}
+
+.graph-axis__item {
+    font-size: 12px;
+    color: #A1A2A2;
+}
+
+.graph__zero {
+    position: absolute;
+    left: -20px;
+    bottom: -25px;
+}
